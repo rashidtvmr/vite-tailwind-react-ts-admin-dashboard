@@ -115,7 +115,7 @@ export default {
         darkinset: "0px 4px 4px inset",
       },
       borderRadius: {
-        primary: "20px",
+        primary: "12px",
       },
     },
     screens: {

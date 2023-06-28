@@ -74,13 +74,13 @@ export default function AdminLayout(props: { [x: string]: any }) {
               secondary={getActiveNavbar(routes)}
               {...rest}
             />
-            <div className="pt-5s mx-auto mb-auto h-full min-h-[84vh] p-2 md:pr-2">
+            <div className="pt-5s mx-auto mb-auto h-full  p-2 md:pr-2">
               <Routes>
                 {getRoutes(routes)}
 
                 <Route
                   path="/"
-                  element={<Navigate to="/admin/default" replace />}
+                  element={<Navigate to="/auth/sign-in" replace />}
                 />
               </Routes>
             </div>

@@ -13,6 +13,16 @@
   }
 }
 
+body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 247 254 / var(--tw-bg-opacity));
+}
+
+body.dark {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(17 28 68 / var(--tw-bg-opacity)) !important;
+}
+
 input.defaultCheckbox::before {
   content: url(../src/assets/svg/checked.svg);
   color: white;

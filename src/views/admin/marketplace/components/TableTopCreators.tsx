@@ -82,7 +82,7 @@ function CheckTable(props: { tableData: any }) {
     debugTable: true,
   });
   return (
-    <Card extra={"w-full h-full sm:overflow-auto px-6"}>
+    <Card extra={"w-full sm:overflow-auto px-6"}>
       <header className="relative flex items-center justify-between pt-4">
         <div className="text-xl font-bold text-navy-700 dark:text-white">
           Check Table
@@ -123,7 +123,7 @@ function CheckTable(props: { tableData: any }) {
           <tbody>
             {table
               .getRowModel()
-              .rows.slice(0, 5)
+              .rows
               .map((row) => {
                 return (
                   <tr key={row.id}>
@@ -146,6 +146,7 @@ function CheckTable(props: { tableData: any }) {
           </tbody>
         </table>
       </div>
+
     </Card>
   );
 }

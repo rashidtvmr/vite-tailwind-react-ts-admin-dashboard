@@ -1,15 +1,11 @@
-import { useState } from 'react'
-import './App.css'
+import { useEffect, useLayoutEffect, useState } from 'react'
 import RoutesList from './layouts/RoutesList'
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+    // useLayoutEffect(() => {
 
-  return (
-    <>
-      <RoutesList />
-    </>
-  )
+    // }, [])
+    return <RoutesList />;
 }
 
 export default App
